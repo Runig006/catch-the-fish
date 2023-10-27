@@ -1,6 +1,7 @@
 {
     "name": "@clarkwinkelmann/catch-the-fish",
     "private": true,
+    "version": "1.0.0",
     "dependencies": {
         "dayjs": "^1.10.7",
         "flarum-tsconfig": "^1.0",

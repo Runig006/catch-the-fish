@@ -11,7 +11,6 @@ use Flarum\Api\Serializer;
 use Flarum\Discussion\Discussion;
 use Flarum\Extend;
 use Flarum\Post\Post;
-use Flarum\Settings\SettingsRepositoryInterface;
 use Flarum\User\User;
 
 return [

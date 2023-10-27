@@ -1,6 +1,7 @@
 {
     "name": "clarkwinkelmann/catch-the-fish",
     "description": "Watch your users catch as many fishes as they can",
+    "version": "1.0.0",
     "keywords": [
         "extension",
         "flarum",
@@ -31,8 +32,8 @@
             "category": "feature",
             "icon": {
                 "name": "fas fa-fish",
-                "backgroundColor": "#90d71b",
-                "color": "#166b14"
+                "backgroundColor": "#ff7700",
+                "color": "#ffffff"
             },
             "optional-dependencies": [
                 "flarum/suspend",

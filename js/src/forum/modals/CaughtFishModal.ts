@@ -102,7 +102,7 @@ export default class CaughtFishModal extends Modal<CaughtFishModalAttrs> {
                 }),
             ]) : null,
             m('p', app.translator.trans(translationPrefix + 'congratulation', {
-                catch_count: fish.round()!.myRanking()?.catch_count(),
+                catch_count: fish.round()!.myRanking()?.catch_count?.(),
             })),
             fish.canName() ? m('.Form-group', [
                 m('p', app.translator.trans(translationPrefix + 'name-help')),
