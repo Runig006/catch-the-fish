@@ -2,6 +2,8 @@
 
 namespace ClarkWinkelmann\CatchTheFish;
 
+use ClarkWinkelmann\CatchTheFish\Console\MoveAfterCommand;
+use ClarkWinkelmann\CatchTheFish\Console\MoveAfterSchedule;
 use ClarkWinkelmann\CatchTheFish\Controllers;
 use ClarkWinkelmann\CatchTheFish\Extenders\ApiControllerIncludes;
 use ClarkWinkelmann\CatchTheFish\Serializers\FishSerializer;
@@ -95,4 +97,8 @@ return [
 
     (new Extend\ServiceProvider())
         ->register(Providers\StorageServiceProvider::class),
+
+    (new Extend\Console())
+        ->command(MoveAfterCommand::class)
+        ->schedule(MoveAfterCommand::class, new MoveAfterSchedule()),
 ];
